@@ -1,5 +1,5 @@
-make -C %ZGB_PATH%\src clean
+C:\gbdk\bin\make-3.81-bin\bin\make -C %ZGB_PATH%\src clean
 cd src
-make clean
+C:\gbdk\bin\make-3.81-bin\bin\make clean
 cd ..
 pause
