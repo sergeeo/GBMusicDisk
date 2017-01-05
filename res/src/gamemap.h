@@ -1,6 +1,6 @@
 /*
 
- MAP.H
+ GAMEMAP.H
 
  Map Include File.
 
@@ -8,7 +8,7 @@
    Section       : 
    Bank          : 0
    Map size      : 20 x 18
-   Tile set      : tiles.gbr
+   Tile set      : gametiles.gbr
    Plane count   : 1 plane (8 bits)
    Plane order   : Tiles are continues
    Tile offset   : 0
@@ -18,10 +18,10 @@
 
 */
 
-#define mapWidth 20
-#define mapHeight 18
-#define mapBank 0
+#define gamemapWidth 20
+#define gamemapHeight 18
+#define gamemapBank 0
 
-extern unsigned char map[];
+extern unsigned char gamemap[];
 
-/* End of MAP.H */
+/* End of GAMEMAP.H */

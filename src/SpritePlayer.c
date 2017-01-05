@@ -6,10 +6,10 @@ UINT8 bank_SPRITE_PLAYER = 2;
 #include "Keys.h"
 
 #define SPRITE_X 12
-#define SPRITE_YMIN 28
-#define SPRITE_Y2 52
-#define SPRITE_Y3 76
-#define SPRITE_YMAX 100
+#define SPRITE_YMIN 20
+#define SPRITE_Y2 46
+#define SPRITE_Y3 68
+#define SPRITE_YMAX 92
 #define MAXPOSITIONS 4
 
 UINT8 cursor_positions[MAXPOSITIONS] = {SPRITE_YMIN, SPRITE_Y2, SPRITE_Y3, SPRITE_YMAX};

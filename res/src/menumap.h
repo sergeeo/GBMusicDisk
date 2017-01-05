@@ -1,6 +1,6 @@
 /*
 
- START.H
+ MENUMAP.H
 
  Map Include File.
 
@@ -8,7 +8,7 @@
    Section       : 
    Bank          : 0
    Map size      : 20 x 18
-   Tile set      : tiles.gbr
+   Tile set      : menutiles.gbr
    Plane count   : 1 plane (8 bits)
    Plane order   : Tiles are continues
    Tile offset   : 0
@@ -18,10 +18,10 @@
 
 */
 
-#define startWidth 20
-#define startHeight 18
-#define startBank 0
+#define menumapWidth 20
+#define menumapHeight 18
+#define menumapBank 0
 
-extern unsigned char start[];
+extern unsigned char menumap[];
 
-/* End of START.H */
+/* End of MENUMAP.H */

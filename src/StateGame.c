@@ -2,8 +2,8 @@
 #include "StateGame.h"
 UINT8 bank_STATE_GAME = 2;
 
-#include "..\res\src\tiles.h"
-#include "..\res\src\map.h"
+#include "..\res\src\gametiles.h"
+#include "..\res\src\gamemap.h"
 #include "..\res\src\font.h"
 
 #include "ZGBMain.h"
@@ -14,16 +14,16 @@ UINT8 bank_STATE_GAME = 2;
 extern UINT8 n_sprite_types;
 
 void PrintTitles() {
-	PRINT_POS(4, 4);
+	PRINT_POS(4, 3);
 	Printf("CHICHARRONES");
 	
-	PRINT_POS(4, 7);
+	PRINT_POS(4, 6);
 	Printf("ESPETITOS");
 	
-	PRINT_POS(4, 10);
+	PRINT_POS(4, 9);
 	Printf("MORTADELA");
 	
-	PRINT_POS(4, 13);
+	PRINT_POS(4, 12);
 	Printf("HAMBURGUELA");
 }
 
@@ -38,11 +38,14 @@ void Start_STATE_GAME() {
 		SpriteManagerLoad(i);
 	}
 	SHOW_SPRITES;
-
+	SpriteManagerAdd(SPRITE_VUMETER, 20, 110);
+	SpriteManagerAdd(SPRITE_VUMETER, 52, 110);
+	SpriteManagerAdd(SPRITE_VUMETER, 84, 110);
+	SpriteManagerAdd(SPRITE_VUMETER, 116, 110);
 	scroll_target = SpriteManagerAdd(SPRITE_PLAYER, 50, 50);
 
-	InitScrollTiles(0, 2, tiles, 3);
-	InitScroll(mapWidth, mapHeight, map, 0, 0, 3);
+	InitScrollTiles(0, 2, gametiles, 3);
+	InitScroll(gamemapWidth, gamemapHeight, gamemap, 0, 0, 3);
 	SHOW_BKG;
 	
 // print song titles
