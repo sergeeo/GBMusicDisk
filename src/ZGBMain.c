@@ -4,8 +4,10 @@
 #include "StateGame.h"
 
 #include "SpritePlayer.h"
+/* #include "SpriteVumeter.h" */
 
 #include "../res/src/player.h"
+/* #include "../res/src/vumeter.h" */
 
 UINT8 next_state = STATE_MENU;
 
@@ -18,6 +20,7 @@ void InitStates() {
 }
 
 void InitSprites() {
+/* 	INIT_SPRITE(SPRITE_VUMETER, vumeter, 3, FRAME_16x16, 4); */
 	INIT_SPRITE(SPRITE_PLAYER, player, 3, FRAME_16x16, 27);
 }
 

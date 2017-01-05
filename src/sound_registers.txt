@@ -1,0 +1,4 @@
+NR12 ES VOL DE CANAL 1 0xFF12 (bit 7-4)
+NR22 ES VOL DE CANAL 2 0xFF17 (bit 7-4)
+NR32 ES VOL DE CANAL 3 0xFF1C (bit 6-5 00 mute / 01 full / 10 mitad / 11 cuarto)
+NR42 ES VOL DE CANAL 4 0xFF21 (bit 7-4) 
