@@ -9,6 +9,11 @@
 #include "../res/src/player.h"
 #include "../res/src/vumeter.h"
 
+#define VUMETER_POSITION1 24
+#define VUMETER_POSITION2 56
+#define VUMETER_POSITION3 88
+#define VUMETER_POSITION4 120
+
 UINT8 next_state = STATE_MENU;
 
 SET_N_STATES(N_STATES);
