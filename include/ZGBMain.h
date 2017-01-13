@@ -13,6 +13,7 @@ typedef enum {
 typedef enum {
 	SPRITE_PLAYER,
 	SPRITE_VUMETER,
+	SPRITE_GUY,
 
 	N_SPRITE_TYPES
 } SPRITE_TYPE;

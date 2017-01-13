@@ -2,8 +2,8 @@
 #include "StateMenu.h"
 UINT8 bank_STATE_MENU = 2;
 
-#include "..\res\src\menutiles.h"
-#include "..\res\src\menumap.h"
+#include "..\res\src\startscreen_map.h"
+#include "..\res\src\startscreen_tiles.h"
 
 #include "ZGBMain.h"
 #include "Scroll.h"
@@ -12,9 +12,22 @@ UINT8 bank_STATE_MENU = 2;
 
 /* extern const unsigned char* exo_start_mod_Data[]; */
 
+extern UINT8 n_sprite_types;
+
 void Start_STATE_MENU() {
-	InitScrollTiles(0, 2, menutiles, 3);
-	InitScroll(menumapWidth, menumapHeight, menumap, 0, 0, 3);
+	
+	UINT8 i;
+
+	SPRITES_8x16;
+	for(i = 0; i != n_sprite_types; ++ i) {
+		SpriteManagerLoad(i);
+	}
+	SHOW_SPRITES;
+
+	SpriteManagerAdd(SPRITE_GUY, 90, 80);
+	
+	InitScrollTiles(0, 255, startscreen_tiles, 3);
+	InitScroll(startscreen_mapWidth, startscreen_mapHeight, startscreen_map, 0, 0, 3);
 	SHOW_BKG;
 	
 	/* PlayMusic(exo_start_mod_Data, 4, 0); */

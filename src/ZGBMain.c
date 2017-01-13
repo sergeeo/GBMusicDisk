@@ -5,8 +5,10 @@
 
 #include "SpritePlayer.h"
 #include "SpriteVumeter.h"
+#include "SpriteGuy.h"
 
 #include "../res/src/player.h"
+#include "../res/src/guy.h"
 #include "../res/src/vumeter.h"
 
 #define VUMETER_POSITION1 24
@@ -27,6 +29,7 @@ void InitStates() {
 void InitSprites() {
 	INIT_SPRITE(SPRITE_PLAYER, player, 3, FRAME_16x16, 27);
 	INIT_SPRITE(SPRITE_VUMETER, vumeter, 3, FRAME_16x16, 4);
+	INIT_SPRITE(SPRITE_GUY, guy, 3, FRAME_16x16, 5);
 }
 
 #include "Math.h"
