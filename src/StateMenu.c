@@ -2,8 +2,9 @@
 #include "StateMenu.h"
 UINT8 bank_STATE_MENU = 2;
 
-#include "..\res\src\startscreen_map.h"
-#include "..\res\src\startscreen_tiles.h"
+#include "..\res\src\menutiles.h"
+#include "..\res\src\menumap.h"
+
 
 #include "ZGBMain.h"
 #include "Scroll.h"
@@ -26,8 +27,8 @@ void Start_STATE_MENU() {
 
 	SpriteManagerAdd(SPRITE_GUY, 90, 80);
 	
-	InitScrollTiles(0, 255, startscreen_tiles, 3);
-	InitScroll(startscreen_mapWidth, startscreen_mapHeight, startscreen_map, 0, 0, 3);
+	InitScrollTiles(0, 130, menutiles, 3);
+	InitScroll(menumapWidth, menumapHeight, menumap, 0, 0, 3);
 	SHOW_BKG;
 	
 	/* PlayMusic(exo_start_mod_Data, 4, 0); */

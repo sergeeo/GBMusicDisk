@@ -1,6 +1,6 @@
 /*
 
- GAMEMAP.B3.C
+ GAMEMAP.B5.C
 
  Map Source File.
 
@@ -62,4 +62,4 @@ const unsigned  char gamemap[] =
   0x01,0x01,0x01,0x01,0x01,0x01,0x01,0x01,0x01,0x01
 };
 
-/* End of GAMEMAP.B3.C */
+/* End of GAMEMAP.B5.C */

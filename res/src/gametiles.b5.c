@@ -1,6 +1,6 @@
 /*
 
- SRC/GAMETILES.B3.C
+ SRC/GAMETILES.B5.C
 
  Tile Source File.
 
@@ -31,4 +31,4 @@ const unsigned  char gametiles[] =
   0xFF,0xFF,0xFF,0xFF,0xFF,0xFF,0xFF,0xFF
 };
 
-/* End of SRC/GAMETILES.B3.C */
+/* End of SRC/GAMETILES.B5.C */

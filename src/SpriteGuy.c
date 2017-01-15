@@ -3,7 +3,7 @@
 #include "SpriteManager.h"
 UINT8 bank_SPRITE_GUY = 2;
 
-const UINT8 anim_walk[]= {2, 0, 1};
+const UINT8 anim_walk[]= {5, 0, 1, 2, 3, 4};
 
 void Start_SPRITE_GUY(){
 		SetSpriteAnim(THIS, anim_walk, 15);

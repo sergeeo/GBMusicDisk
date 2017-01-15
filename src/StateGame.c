@@ -49,8 +49,8 @@ void Start_STATE_GAME() {
 	SpriteManagerAdd(SPRITE_VUMETER, VUMETER_POSITION4, 110);
 	scroll_target = SpriteManagerAdd(SPRITE_PLAYER, 50, 50);
 
-	InitScrollTiles(0, 2, gametiles, 3);
-	InitScroll(gamemapWidth, gamemapHeight, gamemap, 0, 0, 3);
+	InitScrollTiles(0, 2, gametiles, 5);
+	InitScroll(gamemapWidth, gamemapHeight, gamemap, 0, 0, 5);
 	SHOW_BKG;
 	
 // print song titles

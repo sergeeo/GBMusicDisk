@@ -1,6 +1,6 @@
 /*
 
- SRC/PLAYER.B3.C
+ SRC/PLAYER.B5.C
 
  Tile Source File.
 
@@ -243,4 +243,4 @@ const unsigned  char player[] =
   0x00,0xFC,0x00,0xF8,0x00,0x00,0x00,0x00
 };
 
-/* End of SRC/PLAYER.B3.C */
+/* End of SRC/PLAYER.B5.C */

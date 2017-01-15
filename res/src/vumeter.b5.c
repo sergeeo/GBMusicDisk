@@ -1,6 +1,6 @@
 /*
 
- SRC/VUMETER.B3.C
+ SRC/VUMETER.B5.C
 
  Tile Source File.
 
@@ -59,4 +59,4 @@ const unsigned  char vumeter[] =
   0xFC,0xFC,0xF8,0xF8,0xF0,0xF0,0xC0,0xC0
 };
 
-/* End of SRC/VUMETER.B3.C */
+/* End of SRC/VUMETER.B5.C */
