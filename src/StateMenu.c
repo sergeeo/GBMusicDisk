@@ -25,9 +25,14 @@ void Start_STATE_MENU() {
 	}
 	SHOW_SPRITES;
 
-	SpriteManagerAdd(SPRITE_GUY, 90, 80);
+	SpriteManagerAdd(SPRITE_GUY, 0, 65);
+	SpriteManagerAdd(SPRITE_GUY, 0, 80);
+	SpriteManagerAdd(SPRITE_GUY, 1, 110);
+	SpriteManagerAdd(SPRITE_GUY, 3, 100);
+	SpriteManagerAdd(SPRITE_GUY, 5, 120);
+	SpriteManagerAdd(SPRITE_GUY, 2, 130);
 	
-	InitScrollTiles(0, 130, menutiles, 3);
+	InitScrollTiles(0, 125, menutiles, 3);
 	InitScroll(menumapWidth, menumapHeight, menumap, 0, 0, 3);
 	SHOW_BKG;
 	

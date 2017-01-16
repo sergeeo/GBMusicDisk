@@ -10,6 +10,9 @@ void Start_SPRITE_GUY(){
 }
 
 void Update_SPRITE_GUY(){
+	if(THIS->x < 160) {
+		THIS->x = THIS->x + 1;
+	}
 
 }
 
